@@ -15,7 +15,6 @@
             $pokemons[] = $pokemon;
         }
 
-    
         return $pokemons;
     }
     
@@ -32,12 +31,8 @@
 
         return $result;
     }
-
-    foreach(getAllPokemon() as $pokemon) {
-        highlight_string("<?php\n" . var_export($pokemon, true) . ";\n?>");
-    }
 ?>
-<!-- 
+
 <html>
   <head>
     <title>POKEDUMB Find</title>
@@ -98,4 +93,4 @@
         </ul>
     </div>
   </body>
-</html> -->
+</html>
