@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cetak Pattern</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
+
+<script>
+    function cetakMatrix(angka) {
+        if (angka % 2 == 1) {
+            document.getElementById('app').innerHTML = 'angka harus berupa bilangan genap';
+            return;
+        }
+
+        let matrix = [];
+        let factor = [];
+
+        for(i=0; i<angka; i++) {
+            if (i == 0) {
+                if (angka % 3 == 0) {
+                    factor.push(2)
+                } else if (angka % 3 == 2) {
+                    factor.push(3)
+                } else if (angka % 3 == 1) {
+                    factor.push(1)
+                } 
+            } else {
+                factor.push(factor[i-1] + 3)
+            }
+        }
+        
+        factor = factor.filter(i => i <= angka);
+
+        for(i = 1; i <= angka; i++) {
+            let el = document.getElementById('app');
+            for(j = 1; j <= angka; j++) {
+                if (i == 1 || i == angka || factor.includes(j)) {
+                    el.innerHTML += ' + '
+                } else {
+                    el.innerHTML += ' = '
+                }
+            }
+            el.innerHTML +="<br>"
+        }
+        return matrix;
+    }
+    cetakMatrix(20)
+</script>
