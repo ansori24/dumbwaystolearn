@@ -4,7 +4,7 @@
 Soal no 1 bisa dijalankan di https://es6console.com/ akan muncul hasilnya.
 
 ## Soal no 2
-Untuk soal no 2 saya kurang paham bagaimana menyusun huruf di dalam array menjadi sebuak kata
+Untuk soal no 2 saya kurang paham bagaimana menyusun huruf di dalam array menjadi sebuak kata. namun saya menemukan triknya. Bisa langsung dibuka di https://es6console.com/
 
 ## Soal no 3
 Soal no 3 cukup menantang, perlu sedikit memutar otak, namum saya berhasil menyelesaikannya. file tsb bisa langsung dibuka.
